@@ -1,3 +1,10 @@
 @import 'variable/color';
 @import '_global';
+@import 'component/post';
+@import 'component/widget';
 @import 'page/homepage';
+@import 'page/404';
+@import 'page/search';
+@import 'page/category';
+@import 'page/single';
+@import 'component/cta';

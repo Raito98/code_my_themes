@@ -2,9 +2,6 @@
     &-header{
         padding: 30px 0;
         background-color: #fff;
-        @media(max-width: 575px) {
-            background-color: #eee;
-        }
         .home-menu-mobile-icon{
             margin: auto;
             text-align: center;
@@ -100,6 +97,11 @@
         .title-link{
             font-size: 16px;
         }
+        .post-more{
+            .title-link{
+                font-size: 12px;
+            }
+        }
     }
     &-news-new{
         padding: 30px 0;
@@ -129,6 +131,7 @@
     .home-news-kienthuc{
         padding: 60px 0;
     }
+
     .widget-home-category{
         .post-sidebar{
             .post{
@@ -235,7 +238,7 @@
     }
     .footer-white-lable{
         background: $green;
-        padding: 10px 0;
+        padding: 5px 0;
         p{
             color: #fff;    
             margin: 0;
@@ -333,6 +336,10 @@
         font-weight: 700;
         color: $green;
     }
+    .list-category-border{
+        border-top: 1px solid #ccc;
+        padding-top: 30px;
+    }
 }
 
 
@@ -341,6 +348,9 @@
     position: sticky;
     top: 0;
     z-index: 5;
+    .fa-bars{
+        color: $white;
+    }
     .navbar {
         padding: 0;
     }
@@ -349,12 +359,19 @@
         &:hover{
             .dropdown-menu{
                 display: flex;
+                @media (max-width: 992px) and (min-width: 768px) {
+                    display: block;
+                }
+                @media(max-width: 575px) {
+                    display: block;
+                }
                 margin: 0;
             }
 
         }
     }
-    .nav-link{
+    .nav-link,
+    .navbar-brand{
         color: $white;
         font-size: 18px;
         font-weight: 700;
@@ -365,6 +382,9 @@
     .dropdown-menu{
         width: 375px;
         flex-wrap: wrap;
+        @media(max-width: 575px) {
+            width: 100%;
+        }
         .dropdown-item{
             width: 50%;
             &:hover{
@@ -374,6 +394,12 @@
     }
     .show{
         display: flex;
+        @media (max-width: 992px) and (min-width: 768px) {
+            display: block;
+        }
+        @media(max-width: 575px) {
+            display: block;
+        }
     }
 }
 

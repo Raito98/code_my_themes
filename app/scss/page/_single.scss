@@ -1,0 +1,185 @@
+.single-post{
+    font-size: 16px;
+}
+
+.inform-title{
+    color: $green;
+    font-size: 26px;
+    font-weight: 700;
+}
+.detail-rate{
+    margin-bottom: 60px;
+    .checked {
+        color: orange;
+      }
+    background: #f2f2f2;
+   
+    padding-top: 15px;
+    .detail-rate-title{
+        padding-left: 60px;
+        padding-top: 10px;
+        font-weight: 700;
+        position: relative;
+        &::before{
+            content: '';
+            background: url('../images/nam-khoa/cropped-logo-tapchidongy.jpg') no-repeat;
+            background-size: cover;
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            top: 5px;
+            left: 27px;
+        }
+    }
+    .detail-rate-icon{
+        display: flex;
+        justify-content: space-between;
+        .detail-rate-coment{
+            font-size: 11px;
+        }
+    }
+    ul{
+        display: flex;
+        padding-top: 13px;
+        li{
+            margin: 0 5px;
+            border: 1px solid #ccc;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+       
+    }
+    .detail-fac{
+        background: #3b5998;
+        .fa-facebook{
+            color: $white;
+            padding-top: 8px;
+            padding-left: 9px;
+        }  
+    }
+    .detail-twit{
+        background: #55acee;
+        .fa-twitter{
+            color: $white;
+            padding-top: 7px;
+            padding-left: 8px;
+        }
+    }
+    .detail-print{
+        background: #bab9ba;
+        .fa-pinterest{
+            color: $white;
+            padding-top: 7px;
+            padding-left: 8px;
+        } 
+    }
+    .rate-star{
+        padding-right: 30px;
+        height: 50px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+}
+
+.entry{
+    margin: 20px 0;
+    img + p{
+        margin-top: 15px;
+    }
+    img + h5{
+        margin-top: 30px;
+    }
+    .detail-note{
+        font-size: 16px;
+        color: #085fbd;
+        &:hover{
+            color: $color_hover;
+        }
+    }
+    h4,
+    h5{
+        font-weight: 700;
+    }
+    .detail-note-list{
+        padding: 15px;
+        position: relative;
+    }
+    ul{
+        list-style: disc;
+    }
+    iframe{
+        width: 100%;
+    }
+   
+    
+}
+.detail-rate-footer{
+    font-size: 14px;
+    font-style: italic;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.form-question{
+    background: #f2f2f2;
+    padding-bottom: 20px;
+    .form-title{
+        padding: 10px 0;
+        background: #dc3545;
+        color: $white;
+        text-transform: uppercase;
+    }
+    input{
+        width: 80%;
+        margin: 20px 0;
+        border: 1px solid #ccc;
+        height: 40px;
+    }
+    textarea{
+        width: 80%;
+        height: 100px;
+    }
+    .form-button{
+        width: 80%;
+        border-radius: 35px;
+        border: none;
+        background: #d98f01;
+        color: $white;
+    }
+}
+
+.detail-new-title{
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.detail-new-link-title{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.form-comment{
+    .content-comment{
+        height: 150px;
+    }
+    button{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        background: #3b2314;
+        color: $white;
+        font-size: 16px;
+        padding: 10px 25px;
+        text-transform: uppercase;
+        font-weight: 700;
+        border: none;
+        &:hover{
+            background: $green;
+
+        }
+    }
+    .active{
+        display: flex !important;
+    }
+    .inform-comment{
+        display: none;
+    }
+}

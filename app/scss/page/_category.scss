@@ -1,0 +1,42 @@
+.category-child-page{
+    .widget-header{
+        &::before{
+            display: none;
+        }
+        .widget-title{
+            font-size: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            &::after{
+                position: absolute;
+                background: url('../images/banner/bg-title.jpg') repeat-x;
+                width: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+                height: auto;
+                left: 0;
+                z-index: 1;
+            }
+        }
+        .widget-title-link{
+            font-style: normal;
+            padding-left: 0;
+            text-transform: none;
+            z-index: 2;
+            background: $white;
+            padding-right: 15px;
+        }
+    }
+    .widget-content{
+        .list-category-child-post{
+            background-color: $white;
+            border: none;
+        }
+    }
+    .list-category-child{
+        border: 1px solid #ccc;
+        position: sticky;
+        top: 60px;
+        margin-bottom: 30px;
+    }
+}

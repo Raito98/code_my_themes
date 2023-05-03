@@ -4,6 +4,7 @@ img{
 }
 body{
     font-size: 14px;
+    position: relative;
 }
 a{
     &:hover{
@@ -11,8 +12,16 @@ a{
         color: $color_hover;
     }
 }
+.related-post{
+    margin-bottom: 60px;
+}
 ul{
     list-style: none;
+    li{
+        &:last-child{
+            border-bottom: none !important;
+        }
+    }
 }
 .title-link{
     color: $green;
@@ -21,125 +30,60 @@ ul{
         color: $color_hover;
     }
 }
-
-.post{
-    display: block;
-    margin-bottom: 30px;
-    &-thumbnail{
-        display: block;
-        margin-bottom: 15px;
-        img{
-            -o-object-fit: cover;
-            object-fit: cover;
-            object-position: 50% 50%;
-            -o-object-position: 50% 50%;
-            width: 100%;
-            height: 100%;
-            border-radius: 5px;
-        }
-        &:hover{
-            opacity: 0.8;
-        }
-    }
-    &-content-title{
-        font-size: 20px;
-        font-weight: 700;
-    }
-    &-content-description{
-        color: #ccc;
-    }
+.page-title{
+    color: $green;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 60px;
 }
-.post{
-    .title-link{
+.breadcrumbs{
+   padding: 30px 0;
+   a{
         color: #000;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        line-height: 24px;
-        -webkit-line-clamp: 3;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
         &:hover{
-            text-decoration: none;
             color: $color_hover;
         }
     }
-    &-more{
-        font-weight: 700;
-        float: right;
-        text-transform: uppercase;
-        font-size: 12px;
-        .title-link{
-            color: $color_hover;
-            &:hover{
-                color: $green;
-            }
-        }
-    }
-}
-.boder-bottom-none{
-    border-bottom: none !important;
-}
-.widget{
-    &-header{
-        position: relative;
-        &::before{
-            content: '';
-            position: absolute;
-            height: 100%;
-            border: 3px solid $color_hover;
-            bottom: 0;
-            transform: rotate3d(1, 1, 1, 30deg);
-        }
-    }
-    &-title {
-        margin-bottom: 60px;
+    .breadcrumbs-content{
         padding-bottom: 10px;
-        &::after{
-            content: "";
-            position: absolute;
-            bottom: 1px;
-            width: 70px;
-            height: 5px;
-            background: $color_hover;
-            left: -5px;
-            right: auto;
-        }
-    }
-    .widget-title-link{
-        position: relative;
-        font-style: italic;
-        text-transform: uppercase;
-        font-weight: 700;
-        padding-left: 20px;
-        
-    }
-    .widget-content{
-        margin: 60px 0;
+        border-bottom: 1px solid #ccc;
+        border-bottom-style: dashed;
     }
 }
-.post-sidebar{
-    .post{
-        display: flex;
-        margin-bottom: 15px;
-        &-thumbnail{
-            margin-right: 15px;
-            width: 215px;
-            height: 115px;
-            margin-bottom: 0;
+
+.pagination {
+    display: inline-block;
+    margin-bottom: 30px;
+    a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid #ddd;
+        &:hover:not(.active) {
+            background-color: #ddd;
         }
-        &-content{
-            width: 50%;
-        }
-        &-content-title{
-            font-size: 15px;
-            width: 100%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            line-height: 25px;
-            -webkit-line-clamp: 3;
-            height: 75px;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-        }
+    }
+    .active{
+        background-color: #4CAF50;
+        color: white;
+        border: 1px solid #4CAF50;
+    }
+}
+.scroll-top{
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    background: #006a15;
+    right: 70px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 10px;
+    &:hover{
+        opacity: 0.8;
     }
 }
